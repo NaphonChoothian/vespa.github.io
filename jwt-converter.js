@@ -4,9 +4,11 @@ var header = {
   "typ": "JWT"
 };
 var gamescore = "";
+var userid = "";
 
-function GetScore(score) {
+function GetScore(score, user){
   gamescore = score;
+  userid = user;
 };
 
 var data = {
@@ -16,7 +18,7 @@ var data = {
   "iss": "vespa", // issuer, let it be vespa
   "jti": "bd4b6955-892a-4e07-96bb-431be2d09aab", // token unique id, may auto generate from your lib
   "nbf": 1586865509, // not valid before . . . , may auto generate from lib
-  "sub": "6c6dff18-c1fa-4cfd-a2a1-b9b839571619", // user id
+  "sub": userid, //"6c6dff18-c1fa-4cfd-a2a1-b9b839571619", // user id
   "typ": "score", // let defined this token as a score token
   "score": gamescore // as a millisec (String format MM:SS:MS)
 };
@@ -52,4 +54,21 @@ signature = base64url(signature);
 
 document.getElementById("signature").innerText = signature;
 
-var JWT_Enc = encodedHeader + "." + encodedData + "." + signature;
+
+
+function SetEncode(){
+	var JWT_Enc = encodedHeader + "." + encodedData + "." + signature;
+	return JWT_Enc;
+}
+
+
+
+function parseJwt (token) {
+    var base64Url = token.split('.')[1];
+    var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+
+    return JSON.parse(jsonPayload);
+};
