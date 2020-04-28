@@ -1,7 +1,7 @@
 {
 	"name": "Vespa Racing",
 	"short_name": "Vespa Racing",
-	"description": "",
+	"description": "Error Check + AJAX get user_id fixed",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "landscape",
