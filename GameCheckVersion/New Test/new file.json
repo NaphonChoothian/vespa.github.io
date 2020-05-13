@@ -1,0 +1,34 @@
+{
+  "data": {
+    "birthdate": "2010-04-17",
+    "country": "some country",
+    "email": "some email",
+    "email_verified_at": null,
+    "first_name": "some first_name",
+    "game_scores": [
+      {
+        "inserted_at": "2020-04-22T08:47:27",
+        "score": 1234,
+        "user_id": "5c406e04-9b4f-4098-9827-b92204661864",
+        "weekly_cycle": 0
+      }
+    ],
+    "gender": "some gender",
+    "id": "5c406e04-9b4f-4098-9827-b92204661864",
+    "is_active": true,
+    "last_activity_at": null,
+    "last_name": "some last_name",
+    "password": null,
+    "phone_number": "some phone_number",
+    "user_vehicle": {
+      "gender": "male",
+      "vehicle": {
+        "color": "some color",
+        "image": "some image",
+        "model": "some model",
+        "name": "some name"
+      },
+      "vehicle_id": "9fe0d0e2-51ff-42ba-8cb3-8551a1943388"
+    }
+  }
+}
