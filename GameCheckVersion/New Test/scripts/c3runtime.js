@@ -766,10 +766,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Browser.Acts.GoToURLWindow,
 		C3.Plugins.System.Exps.len,
 		C3.Plugins.Text.Exps.Text,
+		C3.Plugins.Json.Acts.SetInstanceVar,
 		C3.Plugins.System.Exps.left,
 		C3.Plugins.Browser.Cnds.OnUpdateReady,
 		C3.Plugins.Browser.Acts.Reload,
-		C3.Plugins.Json.Acts.SetInstanceVar,
 		C3.Plugins.Browser.Exps.QueryParam,
 		C3.Plugins.System.Exps.int,
 		C3.Plugins.Function.Acts.CallFunction,
@@ -1096,6 +1096,7 @@ self.C3_JsPropNameTable = [
 		() => "Crash",
 		() => "Timer",
 		() => 0.01,
+		() => 10,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const n1 = p._GetNode(1);
@@ -1113,7 +1114,6 @@ self.C3_JsPropNameTable = [
 		},
 		() => 60,
 		() => "TimerMM",
-		() => 10,
 		() => "0",
 		() => "",
 		() => "TimerSS",
@@ -1223,6 +1223,10 @@ self.C3_JsPropNameTable = [
 		},
 		p => {
 			const n0 = p._GetNode(0);
+			return () => (n0.ExpInstVar() / 10);
+		},
+		p => {
+			const n0 = p._GetNode(0);
 			return () => Math.floor((n0.ExpInstVar() / 6000));
 		},
 		p => {
@@ -1231,7 +1235,7 @@ self.C3_JsPropNameTable = [
 		},
 		p => {
 			const n0 = p._GetNode(0);
-			return () => (n0.ExpInstVar() % 100);
+			return () => Math.round((n0.ExpInstVar() % 100));
 		},
 		() => "Timer2",
 		() => 20,
