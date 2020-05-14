@@ -1,7 +1,7 @@
 {
 	"name": "Vespa Racing",
 	"short_name": "Vespa Racing",
-	"description": "Edit math.round to math.floor and text version",
+	"description": "username box space / fullscreen / char pos / AWSD control",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "landscape",

@@ -47,3 +47,83 @@ html, body, canvas {
 	src: url('fonts/komtxtb_-webfont.woff2') format('woff2'), url('fonts/komtxtb_-webfont.woff') format('woff');
 }
 
+@font-face {
+	font-family: 'db adman x bd it v3.2';
+	src: url('fonts/db adman x bd it v3.2.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'db adman x bd v3.2';
+	src: url('fonts/db adman x bd v3.2.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'db adman x bd';
+	src: url('fonts/db adman x bd.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'db adman x bdit';
+	src: url('fonts/db adman x bdit.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'db adman x it v3.2';
+	src: url('fonts/db adman x it v3.2.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'db adman x italic';
+	src: url('fonts/db adman x italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'db adman x li it v3.2';
+	src: url('fonts/db adman x li it v3.2.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'db adman x li v3.2';
+	src: url('fonts/db adman x li v3.2.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'db adman x li';
+	src: url('fonts/db adman x li.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'db adman x liit';
+	src: url('fonts/db adman x liit.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'db adman x ulli it v3.2';
+	src: url('fonts/db adman x ulli it v3.2.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'db adman x ulli v3.2';
+	src: url('fonts/db adman x ulli v3.2.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'db adman x ultrali';
+	src: url('fonts/db adman x ultrali.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'db adman x ultraliit';
+	src: url('fonts/db adman x ultraliit.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'db adman x v3.2';
+	src: url('fonts/db adman x v3.2.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'db adman x';
+	src: url('fonts/db adman x.ttf') format('truetype');
+}
+
